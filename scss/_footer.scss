@@ -1,0 +1,33 @@
+@use "mixin" as *;
+
+
+.footer{
+    position: relative;
+
+    
+    &-wrap{
+        text-align: right;
+        position: absolute;
+        bottom: 132px;
+        right: 130px;
+        
+        @include mq(sp){
+            text-align: center;
+            position: initial;
+            padding-top: 20px;
+        }
+        
+    }
+    &-nav{
+        font-size: 32px;
+        font-weight: bold;
+        padding-bottom: 48px;
+        @include mq(sp){
+            display: none;
+        }
+        
+    }
+    .copyrights{
+        font-size: 12px;
+    }
+}

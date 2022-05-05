@@ -1,0 +1,59 @@
+@use "variables"as *;
+@use "mixin" as *;
+
+
+body {
+    background-color: $white;
+    color: $blue;
+    font-family: $Hind,$Didact,$serif,serif;
+
+    
+}
+
+h2 {
+    font-size: 64px;   
+    font-weight: bold;
+    @include mq(sp){
+        font-size: 32px;
+    }
+}
+
+h3 {
+    font-size: 48px;
+    font-weight: bold;
+    @include mq(sp){
+        font-size: 24px;
+    }
+}
+
+h4 {
+    font-size: 36px;
+    @include mq(sp){
+        font-size: 18px;
+    }
+}
+h5{
+    font-size: 32px;
+    font-weight: bold;
+    @include mq(sp){
+        font-size: 16px;
+    }
+}
+p{
+    font-size: 24px;
+    @include mq(sp){
+        font-size: 12px;
+    }
+}
+
+span{
+    display: inline-block;
+    font-size: 14px;
+    @include mq(sp){
+        font-size: 12px;
+    }
+}
+
+li {
+    list-style: none;
+}

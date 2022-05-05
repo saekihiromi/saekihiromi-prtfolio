@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.Hiromi portfolio</title>
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Hind:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- SNS -->
+    <meta property="og:url" content=" http://xs722533.xsrv.jp/" />
+    <meta property="og:type" content=" website" />
+    <meta property="og:title" content=" サンプルページ ひろみくん" />
+    <meta property="og:description" content=" フロントエンド強化！！SASS" />
+    <meta property="og:site_name" content="ひろみくん" />
+    <meta property="og:image" content="http://xs722533.xsrv.jp/img/photo1.jpg" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@bassooooon0326" />
+    <!-- フォントオーサムCDNjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Vue.js -->
+    <script src="https://unpkg.com/vue@next"></script>
+
+</head>
+<body>
+<div id="app">
+    <header>
+        <div>
+            <div class="btn-wrap">
+                <header>
+                    <div class="hamburger" :class="{active: open}" @click="toggleButton" >
+                        <span class="border1"></span>
+                        <span class="border2"></span>
+                    </div>
+                </header>
+    
+                <div class="nav" v-show="open">
+                    <nav>
+                        <ul>
+                            <li :class="{active: open}" @click="toggleButton" ><a href="./index.html">HOME</a></li>
+                            <li :class="{active: open}" @click="toggleButton" ><a href="./index.html#works">WORKS</a></li>
+                            <li :class="{active: open}" @click="toggleButton" ><a href="./index.html#about">ABOUT</a></li>
+                            <li :class="{active: open}" @click="toggleButton" ><a href="./index.html#contact">CONTACT</a></li>
+                            <li :class="{active: open}" @click="toggleButton" ><a href="https://twitter.com/s_hiromi_web" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    
+    </header>
+
+<div>
+    <main>
+        <section>
+            <div class="work">
+                <div class="work-wrap">
+                <a href=""><img :src="image" alt="" class="work-wrap-img"></a>
+                    <div class="work-content">
+                        <h3>Printed Matter</h3>
+                        <a :href="webURL" target="_blank"><img :src="imageSp" alt="" class="work-content__img"></a>
+                        <p>名刺デザイン、印刷まで行なっています。
+                            <br>
+                            <br>
+                            SKILL<br>
+                            Ai / Ps / Canva</p>
+
+                            <div class="work-content-imgs">
+                                <img v-on:click="selectOne" src="./img/name-plate.png" alt="" class="work-content-img">
+                                <img v-on:click="selectTwo" src="./img/print1.png" alt="" class="work-content-img">
+                                <img v-on:click="selectThree" src="./img/print2.png" alt="" class="work-content-img">
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</div>
+</div>
+    <footer>
+        <div class="footer">
+            <div class="footer-wrap">
+                <ul class="footer-navs">
+                    <li class="footer-nav"><a href="./index.html">HOME</a></li>
+                    <li class="footer-nav"><a href="./index.html#works">WORKS</a></li>
+                    <li class="footer-nav"><a href="./index.html#about">ABOUT</a></li>
+                    <li class="footer-nav"><a href="./index.html#contact">CONTACT</a></li>
+                    <li class="footer-nav"><a href="https://twitter.com/s_hiromi_web" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+                <p class="copyrights">2022@saeki Hiromi All Right Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

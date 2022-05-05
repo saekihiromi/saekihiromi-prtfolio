@@ -1,0 +1,75 @@
+@use "mixin" as *;
+@use "variables"as *;
+
+
+
+header{
+    @include mq(pc){
+        display: none;
+    }
+
+    @include mq(sp){
+        width: 100%;
+        height: 60px;
+        background-color: $blue;
+        position: fixed;
+        z-index: 5;
+    }
+
+}
+
+.hamburger{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    margin-left: calc(100% - 100px);
+    z-index: 4;
+    span{
+        position: absolute;
+        width: 56px;
+        height: 4px;
+        background-color: $white;
+        transition: all .2s;
+    }
+}
+
+
+.border1{
+    top: 18px;
+    left: 0;
+}
+
+.border2{
+    bottom: 18px;
+    left: 0;
+}
+
+.hamburger.active .border1{
+    transform: translateY(10px) rotate(45deg);
+}
+.hamburger.active .border2{
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.nav{
+    width: 40vw;
+    height: 100vh;
+    background-color: $blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    
+    ul{
+        padding-left: 0;
+        padding-top: 200px;
+        text-align: center;
+        
+    }
+    
+    li {
+        color: $white;
+        list-style: none;
+        margin-bottom: 40px;
+    }
+}

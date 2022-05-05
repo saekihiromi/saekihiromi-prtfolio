@@ -1,0 +1,14 @@
+$breakpoint:(
+    sp:'screen and (max-width:1379px)',
+    pc:'screen and (min-width:1380px)',
+    desks:'screen and (min-width:1900px)',
+    // sp:'screen and (max-width:1024px)',
+
+);
+
+@mixin mq($size) {
+    @media #{map-get($breakpoint,$size) }{
+        @content;
+    } 
+
+}
