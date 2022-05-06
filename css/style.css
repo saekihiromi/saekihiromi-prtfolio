@@ -563,6 +563,13 @@ li {
 .footer .copyrights {
   font-size: 12px;
 }
+@media screen and (max-width:1379px) {
+  .footer .copyrights {
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+  }
+}
 
 main {
   text-align: center;
@@ -827,8 +834,7 @@ main {
 @media screen and (max-width:1379px) {
   .work-wrap {
     margin: 0;
-    height: 90vh;
-    min-width: 600px;
+    height: 100%;
   }
 }
 .work-wrap-img {

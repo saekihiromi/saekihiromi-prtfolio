@@ -258,8 +258,8 @@ main{
         position: relative;
             @include mq(sp){
                 margin: 0;
-                height: 90vh;
-                min-width: 600px;
+                height: 100%;
+                
 
             }
 
