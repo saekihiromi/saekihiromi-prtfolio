@@ -827,7 +827,8 @@ main {
 @media screen and (max-width:1379px) {
   .work-wrap {
     margin: 0;
-    height: initial;
+    height: 90vh;
+    min-width: 600px;
   }
 }
 .work-wrap-img {
