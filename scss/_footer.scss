@@ -29,5 +29,8 @@
     }
     .copyrights{
         font-size: 12px;
+        @include mq(sp){
+            position: initial;
+        }
     }
 }
