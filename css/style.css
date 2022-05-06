@@ -565,9 +565,7 @@ li {
 }
 @media screen and (max-width:1379px) {
   .footer .copyrights {
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
+    padding-top: 40px;
   }
 }
 
