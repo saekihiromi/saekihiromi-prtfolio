@@ -28,11 +28,11 @@ Vue.createApp({
             this.imageSp = './img/name-plate.png'
         },
         selectTwo(){
-            this.image = './img/print__main.png'
+            this.image = './img/print1__big.png'
             this.imageSp = './img/print1.png'
         },
         selectThree(){
-            this.image = './img/print__main.png'
+            this.image = './img/print2__big.png'
             this.imageSp = './img/print2.png'
         },
         selectWeb0(){
